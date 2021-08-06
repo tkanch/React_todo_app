@@ -138,3 +138,22 @@ div.addList{
     
   
 }
+
+//media query for small screen
+@media screen and (max-width: 640px) {
+      header {
+          flex-direction:column;
+
+          h1 {
+              margin-left:0px;
+          }
+
+          img {
+              margin-bottom:20px;
+          }
+      }
+
+      div.showList,div.addList {
+          margin-left:0px;
+      }
+    }
