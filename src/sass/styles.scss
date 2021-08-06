@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@200&display=swap');
+
+//defining variables
+$fontFamily:'Exo 2', sans-serif;
+$fontColor:#0081a1;
+$transition: all 0.5s 0s ease;
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body {
+    font-family:$fontFamily;
+    background-color:#1e1e1e;
+    color:white;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+
+.fa-edit:hover {
+    color:green;
+}
+
+
+
+header {
+    display:flex;
+    align-items:center;
+    margin-bottom:30px;
+    h1 {
+        font-size: 2rem;
+        color:$fontColor;
+        font-family:$fontFamily;
+        margin-left:20px;
+        
+    }
+    img {
+        width:60px;
+        height:60px;
+    }
+}
+
+
+
+
+div.addList{
+    transition:$transition;
+    position:relative;
+    margin-left:70px;
+    margin-bottom:30px;
+    background-color:white;
+    input {
+        background:white;
+        outline:none;
+        border:none;
+        padding:10px;
+        border:1px solid white;
+        font-size:1.1rem;
+    }
+
+    
+    .togIcon {
+        transition:$transition;
+        color:$fontColor;
+        position:absolute;
+        top:30%;
+        left:88%;
+        cursor:pointer;
+        
+    }
+
+    .fa-edit {
+        color:green;
+    }
+}
+    div.showList {
+       text-align:left;
+       margin-left:70px;
+        ul {
+            list-style-type:none;
+            margin-bottom:20px;
+        }
+        li {
+            display:flex;
+            justify-content:space-between;
+            font-family:$fontFamily;
+            font-size:1.1rem;
+            background-color:$fontColor;
+            margin:20px 0px;
+            padding:8px 15px;
+            width:300px;
+
+            h3 {
+                font-family:$fontFamily;
+                text-transform:capitalize;
+            }
+
+            .edit {
+                margin-right:10px;
+            
+            }
+            .edit,.delete {
+                cursor:pointer;
+            }
+        }
+    li:hover {
+        background-color:white;
+        color:black;
+
+        .fa-edit {
+            color:green;
+        }
+
+        .fa-trash-alt {
+            color:red;
+        }
+    }
+ 
+    button {
+        background-color:transparent;
+        border:solid 1px $fontColor;
+        color:$fontColor;
+        cursor:pointer;
+        padding:8px 15px;
+        font-size:1.2rem;
+
+        &:hover {
+            background-color:$fontColor;
+            color:white;
+        }
+    }
+
+    
+  
+}
