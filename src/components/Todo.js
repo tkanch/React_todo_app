@@ -1,4 +1,5 @@
-import React, {useState} from 'react'
+import React, {useState} from 'react';
+import List from '../images/list.svg';
 
 const Todo = () => {
     //defining useState
@@ -68,7 +69,7 @@ const Todo = () => {
         <main>
               
                 <header>
-                  <img src="../images/list.svg" alt="todo logo" />
+                  <img src={List} alt="todo logo" />
                   <h1>Add your List Here</h1>
                 </header>
                 <div className="addList">
