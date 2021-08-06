@@ -88,21 +88,30 @@ div.addList{
         li {
             display:flex;
             justify-content:space-between;
+            align-items:center;
             font-family:$fontFamily;
-            font-size:1.1rem;
+            font-size:1rem;
             background-color:$fontColor;
             margin:20px 0px;
             padding:8px 15px;
             width:300px;
 
             h3 {
-                font-family:$fontFamily;
+                font-family:Arial, Helvetica, sans-serif;
+                font-weight:400;
                 text-transform:capitalize;
+                line-height:1.6rem;
+                
             }
 
+
+            div.icons {
+                display:flex;
+                
+            }
+           
             .edit {
-                margin-right:10px;
-            
+                margin-right:12px;
             }
             .edit,.delete {
                 cursor:pointer;
@@ -128,7 +137,7 @@ div.addList{
         cursor:pointer;
         padding:8px 15px;
         font-size:1.2rem;
-
+       
         &:hover {
             background-color:$fontColor;
             color:white;
@@ -156,4 +165,20 @@ div.addList{
       div.showList,div.addList {
           margin-left:0px;
       }
+
+     
+      div.showList {
+          text-align:center;
+
+      }
+
+      h3 {
+          text-align:left;
+      }
+      li.edit {
+          margin-left:20px;
+      }
+
+      
+      
     }
